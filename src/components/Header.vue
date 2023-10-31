@@ -3,10 +3,9 @@
     <v-toolbar-items class="v-container py-0">
       <v-btn
         v-for="item in nav"
-        :key="item.text"
-        :title="item.title"
+        :key="item.id"
         :prepend-icon="item.icon"
-        @click="scrollTo(item.text)"
+        @click="scrollTo(item.id)"
         >{{ item.text }}</v-btn
       >
     </v-toolbar-items>
@@ -23,7 +22,7 @@
         </v-toolbar>
 
         <v-list>
-          <v-list-item v-for="item in nav" :key="item.text" @click="scrollTo(item.text)">
+          <v-list-item v-for="item in nav" :key="item.text" @click="scrollTo(item.id)">
             <template #prepend>
               <v-icon :icon="item.icon" />
             </template>
@@ -40,9 +39,14 @@ import { ref } from 'vue'
 const dialog = ref(false)
 const nav = [
   {
+    id: 'home',
     text: 'home',
-    title: 'Back to Home page',
     icon: 'mdi-home'
+  },
+  {
+    id: 'about',
+    text: 'about me',
+    icon: 'mdi-account'
   }
 ]
 function scrollTo(id) {
@@ -56,5 +60,6 @@ function scrollTo(id) {
 header {
   border-bottom: 3px solid rgb(var(--v-theme-secondary)) !important;
   top: 0;
+  z-index: 1;
 }
 </style>

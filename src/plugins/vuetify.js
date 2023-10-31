@@ -28,6 +28,11 @@ export default createVuetify({
           info: '#444649'
         }
       }
-    }
+    },
+    variations: {
+      colors: ['primary', 'secondary', 'info'],
+      lighten: 4,
+      darken: 4,
+    },
   }
 })
