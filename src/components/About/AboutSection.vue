@@ -8,10 +8,10 @@
                 </v-col>
             </v-row>
             <v-row no-gutters>
-                <v-col class="pr-10" cols="6">
+                <v-col md="6" cols="12" class="pr-md-10 mb-5 mb-md-0">
                     <AboutDescription />
                 </v-col>
-                <v-col cols="6" class="pl-10">
+                <v-col md="6" cols="12" class="pl-md-10">
                     <AboutSkills />
                 </v-col>
             </v-row>
