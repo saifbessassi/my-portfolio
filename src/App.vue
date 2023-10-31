@@ -1,12 +1,12 @@
 <script setup>
 import AboutSection from './components/About/AboutSection.vue';
-import Header from './components/Header.vue'
+import AppHeader from './components/Header/AppHeader.vue';
 import Home from './components/Home.vue'
 </script>
 
 <template>
   <Home />
-  <Header />
+  <AppHeader />
   <AboutSection />
 </template>
 
