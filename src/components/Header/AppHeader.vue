@@ -4,7 +4,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import PhoneHeader from './PhoneHeader.vue';
 import DesktopHeader from './DesktopHeader.vue';
 const nav = [
@@ -17,6 +16,11 @@ const nav = [
     id: 'about',
     text: 'about me',
     icon: 'mdi-account'
+  },
+  {
+    id: 'formation',
+    text: 'formation',
+    icon: 'mdi-account-school'
   }
 ]
 function scrollTo(id) {
