@@ -25,7 +25,7 @@ export default createVuetify({
           surface: '#f5f5f5',
           primary: '#e31b6d',
           secondary: '#04c2c9',
-          info: '#444649'
+          info: '#616161'
         }
       }
     },

@@ -3,6 +3,7 @@ import AboutSection from './components/About/AboutSection.vue';
 import FormationSection from './components/Formation/FormationSection.vue';
 import AppHeader from './components/Header/AppHeader.vue';
 import Home from './components/Home.vue'
+import ExperienceSection from './components/Timeline/ExperienceSection.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import Home from './components/Home.vue'
   <AppHeader />
   <AboutSection />
   <FormationSection />
+  <ExperienceSection />
 </template>
 
 <style scoped></style>

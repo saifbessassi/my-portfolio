@@ -11,7 +11,7 @@
         <template v-slot:opposite>
             <div class="text-right">
                 <div class="text-subtitle-2 font-weight-bold">{{ formation.date }}</div>
-                <div class="text-caption font-weight-medium text-capitalize text-info-lighten-4">{{ formation.degree }}</div>
+                <div class="text-caption font-weight-medium text-capitalize text-info-lighten-1">{{ formation.degree }}</div>
                 <v-avatar :image="'src/assets/images/'+formation.logo" size="x-large" class="rounded-lg"></v-avatar>
             </div>
         </template>
