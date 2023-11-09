@@ -26,6 +26,11 @@ const nav = [
     id: 'experiences',
     text: 'experiences',
     icon: 'mdi-briefcase-variant'
+  },
+  {
+    id: 'projects',
+    text: 'projects',
+    icon: 'mdi-laptop'
   }
 ]
 function scrollTo(id) {
