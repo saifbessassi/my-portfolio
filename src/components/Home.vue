@@ -1,13 +1,15 @@
 <template>
   <Section id="home" class="text-white h-screen">
-    <div class="text">
-      Hello, i'm <span class="text-primary">Saif BESSASSI</span>.
+    <v-container fluid class="text-center">
+      <div class="text">
+      {{ $t('home.hello')}} <span class="text-primary">Saif BESSASSI</span>.
       <br />
-      I'm a full-stack web developer.
+      {{ $t('home.myPost') }}
     </div>
     <div class="night">
       <div v-for="n in 15" class="shooting_star"></div>
     </div>
+    </v-container>
   </Section>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
-    <v-toolbar app color="background" class="d-flex d-sm-none position-sticky">
+  <v-toolbar app color="background" class="d-flex d-md-none" :class="dialog ? 'position-absolute' : 'position-sticky'">
     <v-app-bar-nav-icon slot="activator" @click="dialog = true"></v-app-bar-nav-icon>
+    <v-spacer></v-spacer>
+    <LanguageButton />
     <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
       <v-card color="background">
         <v-toolbar flat color="background">
@@ -14,7 +16,7 @@
             <template #prepend>
               <v-icon :icon="item.icon" />
             </template>
-            <v-list-item-title v-text="item.text" class="text-uppercase"></v-list-item-title>
+            <v-list-item-title class="text-uppercase">{{ $t(item.text) }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-card>
@@ -24,19 +26,20 @@
 
 <script setup>
 import { ref } from 'vue';
+import LanguageButton from './LanguageButton.vue';
 
 defineProps({
-    items: {
-        type: Array,
-        required: true
-    }
+  items: {
+    type: Array,
+    required: true
+  }
 })
 
 const dialog = ref(false)
 
 const emit = defineEmits(['click'])
 function scrollTo(id) {
-    emit('click', id)
-    dialog.value = false
+  emit('click', id)
+  dialog.value = false
 }
 </script>

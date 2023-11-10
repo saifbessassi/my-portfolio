@@ -1,5 +1,5 @@
 <template>
-    <Section id="projects" title="projects" class="bg-white py-15">
+    <Section id="projects" :title="$t('projectsSection.title')" class="bg-white py-15">
         <v-container>
             <ProjectsList />
         </v-container>

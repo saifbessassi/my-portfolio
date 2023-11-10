@@ -1,8 +1,8 @@
 <template>
-    <v-dialog transition="dialog-bottom-transition" width="50%" v-model="show" eager>
+    <v-dialog transition="dialog-bottom-transition" width="50%" v-model="show">
         <v-card class="mx-auto" min-width="50%">
             <v-toolbar dark color="primary">
-                <v-toolbar-title>{{ project.title }}</v-toolbar-title>
+                <v-toolbar-title>{{ $t(project.title) }}</v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-btn icon dark @click="close">
                     <v-icon>mdi-close</v-icon>
@@ -10,27 +10,27 @@
             </v-toolbar>
 
             <v-card-title class="pt-2 text-capitalize">
-                Description
+                {{ $t('projectsSection.description') }}
             </v-card-title>
 
             <v-card-text class="text-info">
-                {{ project.description }}
+                {{ $t(project.description) }}
             </v-card-text>
 
             <v-card-title class="pt-2 text-capitalize">
-                tasks
+                {{ $t('projectsSection.tasks') }}
             </v-card-title>
 
             <v-card-text class="text-info">
                 <ul class="pl-5">
                     <li v-for="task in project.tasks" :key="task">
-                        {{ task }}
+                        {{ $t(task) }}
                     </li>
                 </ul>
             </v-card-text>
 
             <v-card-title class="pt-4 text-capitalize">
-                Technologies & outils
+                {{ $t('projectsSection.techAndTools') }}
             </v-card-title>
 
             <v-card-text>

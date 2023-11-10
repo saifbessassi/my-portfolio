@@ -16,13 +16,13 @@
       </template>
       <div>
         <div class="text-h6 font-weight-bold mb-3 text-secondary">
-          {{ exp.post }}
+          {{ $t(exp.post) }}
         </div>
         <div class="font-weight-bold text-info-darken-3 mb-3">Missions:</div>
         <ul class="text-info ml-10 mb-5">
-          <li v-for="mission in exp.missions">{{ mission }}</li>
+          <li v-for="mission in exp.missions">{{ $t(mission) }}</li>
         </ul>
-        <div class="font-weight-bold text-info-darken-3 mb-3">Technologie/Environnement:</div>
+        <div class="font-weight-bold text-info-darken-3 mb-3">{{ $t('experiencesSection.technologyAndEnv') }}:</div>
         <v-chip label size="small" variant="outlined" color="primary" class="mr-2 mb-2"
           v-for="tech in exp.technologies">{{ tech }}</v-chip>
       </div>
@@ -36,17 +36,17 @@ const experiences = [
     date: '2019 - 2022',
     company: 'Spark-it Tunisie',
     logo: 'sparkit.png',
-    post: 'Développeur web Full Stack PHP & Javascript',
+    post: "experiencesSection.experiences1.post",
     missions: [
-      'Collaboration pour créer des interfaces utilisateur attractives et conviviales.',
-      'Intégration des maquettes',
-      'Conception et développement Front-End et Back-End pour des applications Web.',
-      "Développement de fonctionnalités essentielles et de modules personnalisés.",
-      'Intégration de services tiers.',
-      "Implémentation des tests unitaires.",
-      'Maintenance évolutive et corrective.',
-      "Participation active à des réunions d'équipe et à la planification de projets.",
-      'Veille technologique constante.'
+    "experiencesSection.experiences1.mission1",
+      "experiencesSection.experiences1.mission2",
+      "experiencesSection.experiences1.mission3",
+      "experiencesSection.experiences1.mission4",
+      "experiencesSection.experiences1.mission5",
+      "experiencesSection.experiences1.mission6",
+      "experiencesSection.experiences1.mission7",
+      "experiencesSection.experiences1.mission8",
+      "experiencesSection.experiences1.mission9"
     ],
     technologies: [
       'PHP',
@@ -79,17 +79,17 @@ const experiences = [
     date: '2022 - présent',
     company: 'Spark-it France',
     logo: 'sparkit.png',
-    post: 'Développeur web Full Stack Laravel & Vue.js',
+    post: "experiencesSection.experiences2.post",
     missions: [
-      'Collaboration pour créer des interfaces utilisateur attractives et conviviales.',
-      'Intégration des maquettes',
-      'Conception et développement Front-End et Back-End pour des applications Web.',
-      "Développement de fonctionnalités essentielles et de modules personnalisés.",
-      "Implémentation des tests unitaires.",
-      'Maintenance évolutive et corrective.',
-      'Résolution rapide des problèmes et des bugs pour maintenir une expérience utilisateur sans faille.',
-      "Participation active à des réunions d'équipe et à la planification de projets.",
-      'Veille technologique constante.'
+      "experiencesSection.experiences2.mission1",
+      "experiencesSection.experiences2.mission2",
+      "experiencesSection.experiences2.mission3",
+      "experiencesSection.experiences2.mission4",
+      "experiencesSection.experiences2.mission5",
+      "experiencesSection.experiences2.mission6",
+      "experiencesSection.experiences2.mission7",
+      "experiencesSection.experiences2.mission8",
+      "experiencesSection.experiences2.mission9"
     ],
     technologies: [
       'PHP',

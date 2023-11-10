@@ -1,0 +1,153 @@
+{
+    "home": {
+        "hello": "Salut, je suis",
+        "myPost": "Je suis un développeur web full-stack."
+    },
+    "header": {
+        "home": "accueil",
+        "about": "À propos",
+        "formation": "formation",
+        "experiences": "expériences",
+        "projects": "projets",
+        "references": "références"
+    },
+    "aboutSection": {
+        "title": "About me",
+        "subtitle": "Vous trouverez ici plus d'informations sur moi, ce que je fais et mes compétences actuelles principalement en termes de programmation et de technologie.",
+        "descriptionTitle": "Apprenez à me connaître !",
+        "description1": "Je suis un <b>développeur fullstack</b> passionné, spécialisé dans les technologies <b>Laravel</b> et <b>Vue.js</b>.",
+        "description2": "Mon parcours dans le monde du développement a débuté il y a <b>plus que %{experience} ans</b>, et depuis, j'ai eu l'opportunité de travailler sur une variété de projets, allant des applications web complexes aux sites web élégants. Mon amour pour la programmation m'a conduit à explorer constamment de nouvelles technologies et à chercher des solutions innovantes pour résoudre des problèmes.",
+        "description3": "En dehors du codage, j'apprécie également <b>la musique</b>, <b>le sport</b> et <b>la découverte de nouvelles cultures</b>.",
+        "description4": "Je suis convaincu que la technologie peut améliorer notre quotidien, et je suis toujours enthousiaste à l'idée de participer à des projets qui font une différence dans le monde numérique.",
+        "skillsTitle": "Compétences",
+        "languages": "langues",
+        "versioning": "gestion des versions",
+        "others": "autres"
+    },
+    "formationSection": {
+        "title": "formation",
+        "formation1": {
+            "establishment": "Lycée 9 Avril 1938 de Sfax - Tunisie",
+            "degree": "Études secondaires",
+            "degreeDetails": "Baccalauréat mathématique"
+        },
+        "formation2": {
+            "establishment": "Faculté des sciences de Sfax - Tunisie",
+            "degree": "Licence",
+            "degreeDetails": "Licence fondamentale en science informatique"
+        },
+        "formation3": {
+            "establishment": "Université technique de Riga - Lettonie",
+            "degree": "ERASMUS+",
+            "degreeDetails": "Programme d'échange des étudiants ERASMUS+"
+        },
+        "formation4": {
+            "establishment": "Institut supérieur d’informatique et de multimédia de Sfax - Tunisie",
+            "degree": "Cycle d'ingénieur",
+            "degreeDetails": "Diplôme national d'ingénieur en informatique, technologies web et multimédia"
+        }
+    },
+    "experiencesSection": {
+        "title": "experiences",
+        "technologyAndEnv": "Technologie/Environnement",
+        "experiences1": {
+            "post": "Développeur web Full Stack PHP & Javascript",
+            "mission1": "Veille technologique constante.",
+            "mission2": "Collaboration pour créer des interfaces utilisateur attractives et conviviales.",
+            "mission3": "Intégration des maquettes",
+            "mission4": "Conception et développement Front-End et Back-End pour des applications Web.",
+            "mission5": "Développement de fonctionnalités essentielles et de modules personnalisés.",
+            "mission6": "Intégration de services tiers.",
+            "mission7": "Implémentation des tests unitaires.",
+            "mission8": "Maintenance évolutive et corrective.",
+            "mission9": "Participation active à des réunions d'équipe et à la planification de projets."
+        },
+        "experiences2": {
+            "post": "Développeur web Full Stack Laravel & Vue.js",
+            "mission1": "Collaboration pour créer des interfaces utilisateur attractives et conviviales.",
+            "mission2": "Intégration des maquettes",
+            "mission3": "Conception et développement Front-End et Back-End pour des applications Web.",
+            "mission4": "Développement de fonctionnalités essentielles et de modules personnalisés.",
+            "mission5": "Implémentation des tests unitaires.",
+            "mission6": "Maintenance évolutive et corrective.",
+            "mission7": "Résolution rapide des problèmes et des bugs pour maintenir une expérience utilisateur sans faille.",
+            "mission8": "Participation active à des réunions d'équipe et à la planification de projets.",
+            "mission9": "Veille technologique constante."
+        }
+    },
+    "projectsSection": {
+        "title": "projets",
+        "description": "description",
+        "tasks": "tâches",
+        "techAndTools": "Technologies & outils",
+        "learnMore": "En savoir plus",
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Explorez l'essence de mon expertise en développement fullstack à travers mon portfolio. Plongez dans une collection soigneusement élaborée de projets qui mettent en lumière ma maîtrise tant du front-end que du back-end. Chaque ligne de code et chaque interface utilisateur sont des témoignages de mon engagement envers l'excellence technique et la créativité fonctionnelle. Bienvenue dans mon univers digital, où chaque projet raconte l'histoire de mon parcours en tant que développeur fullstack passionné.",
+            "tasks": {
+                "task1": "Conception et développement de l'interface utilisateur en utilisant Vue.js, Vuetify, HTML, CSS et JavaScript pour garantir une expérience utilisateur fluide et intuitive.",
+                "task2": "Création des composants Vue.js.",
+                "task3": "Assurance de l’internationalisation des interfaces avec Vue I18n."
+            }
+        },
+        "hcub": {
+            "title": "HCUB",
+            "description": "J'ai été mandaté pour la participation au développement d'une solution de gestion des identités et des accès (IAM) aident l’entreprise à s’assurer que seuls des utilisateurs disposant des autorisations appropriées peuvent accéder à des ressources du système d’information en utilisant Laravel et Vue.js.",
+            "tasks": {
+                "task1": "Création du tableau de bord utilisateur personnalisé avec un UI/UX designer.",
+                "task2": "Création des composants Vue.js réutilisable.",
+                "task3": "Intégration des maquettes via Vue.js et Vuetify.",
+                "task4": "Assurance de l’internationalisation des interfaces avec Vue I18n.",
+                "task5": "Évaluation des besoins d'évolutivité et mise en place de solutions.",
+                "task6": "Création et consommations des APIs Rest.",
+                "task7": "Mise à niveau des versions de Laravel (de 6 à 8) et PHP (de 5.6 à 8.1).",
+                "task8": "Analyse et résolution des anomalies et des bogues signalés.",
+                "task9": "Implémentation des tests unitaires."
+            }
+        },
+        "timesheets": {
+            "title": "Timesheets",
+            "description": "En tant que développeur Laravel/Vue.js, j'ai été chargé de concevoir et de développer un outil de gestion de temps de travail. Il permet aux employés d’enregistrer le temps passé sur diverses tâches ou projets et il permet aux employeurs de réviser et soumettre les feuilles de temps.",
+            "tasks": {
+                "task1": "Analyse des besoins du client et rédaction de spécifications techniques.",
+                "task2": "Intégration des maquettes via Vue.js et Bootstrap-Vue.",
+                "task3": "Assurance de la réactivité, la bonne ergonomie et l'optimalité de navigation du site web.",
+                "task4": "Conception et développement de fonctionnalités frontend et backend.",
+                "task5": "Création et consommations des APIs RESTful.",
+                "task6": "Développement des modules de gestion des utilisateurs, autorisations et permissions, des scopes, des factures et de profil.",
+                "task7": "Analyse et résolution des anomalies et des bugs signalés.",
+                "task8": "Implémentation des tests unitaires."
+            }
+        },
+        "starkSolution": {
+            "title": "Stark Solutions",
+            "description": "En tant que développeur Vue.js, j'ai été chargé de concevoir et de développer une plateforme permettant la création des comptes, la gestion des organisations, des clients, des packs et de parrainage.",
+            "tasks": {
+                "task1": "Conception et développement de l'interface utilisateur en utilisant Vue.js, Bootstrap-vue, HTML, CSS et JavaScript pour garantir une expérience utilisateur fluide et intuitive.",
+                "task2": "Assurance de la réactivité, la bonne ergonomie et l'optimalité de navigation du site web.",
+                "task3": "Assurance de l’internationalisation des interfaces avec Vue I18n.",
+                "task4": "Mettre en place un système complet d'authentification, y compris l'inscription, la connexion et la réinitialisation de mot de passe.",
+                "task5": "Consommation des API RESTful.",
+                "task6": "Développement d’un module de gestion des rôles, des clients et des commerciaux.",
+                "task7": "Développement d’un module de parrainage et de configuration des codes promos.",
+                "task8": "Collaboration étroite avec l'équipe pour comprendre les besoins et les exigences de l'entreprise, ainsi que pour apporter des améliorations continues."
+            }
+        },
+        "jobboard": {
+            "title": "Job board",
+            "description": "J'ai conçu et développé un Job Board complet qui permet aux demandeurs d'emploi de rechercher et postuler à des offres d'emploi, et aux recruteurs de publier des offres et de gérer leurs processus de recrutement.",
+            "tasks": {
+                "task1": "Analyse des besoins du client et rédaction de spécifications techniques.",
+                "task2": "Mise en place de l'architecture pour gérer les utilisateurs, les candidatures et les offres d'emploi.",
+                "task3": "Conception de l'interface utilisateur responsive en utilisant Angular.",
+                "task4": "Conception et développement de fonctionnalités frontend et backend.",
+                "task5": "Création et consommations des APIs Rest.",
+                "task6": "Mise en place de notifications par email.",
+                "task7": "Implémentation des tests unitaires."
+            }
+        }
+    },
+    "referencesSection": {
+        "title": "Je suis fier d'avoir collaboré avec des entreprises impressionnantes"
+    }
+}

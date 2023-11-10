@@ -10,7 +10,7 @@
             <v-expand-transition>
                 <div v-if="isHovering" class="d-flex flex-column transition-fast-in-fast-out bg-white v-card--reveal">
                     <div class="text-h4 font-weight-bold mb-1">
-                        {{ project.title }}
+                        {{ $t(project.title) }}
                     </div>
                     <div class="text-body-1 text-primary">
                         {{ project.framworks }}
@@ -18,7 +18,7 @@
                     <v-hover v-slot="{ isHovering, props }">
                         <v-btn v-bind="props" class="mt-10" color="primary" :variant="isHovering ? 'elevated' : 'outlined'"
                             @click="showDetails = true">
-                            Learn more
+                            {{ $t('projectsSection.learnMore') }}
                         </v-btn>
                     </v-hover>
                 </div>

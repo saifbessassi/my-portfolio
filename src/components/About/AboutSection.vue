@@ -1,10 +1,9 @@
 <template>
-    <Section id="about" title="about me" class="bg-surface py-15">
+    <Section id="about" :title="$t('aboutSection.title')" class="bg-surface py-15">
         <v-container>
             <v-row justify="center">
                 <v-col cols="8">
-                    <p class="mb-10 text-center text-info-lighten-3">Here you will find more information about me, what I
-                        do, and my current skills mostly in terms of programming and technology</p>
+                    <p class="mb-10 text-center text-info-lighten-3">{{ $t('aboutSection.subtitle') }}</p>
                 </v-col>
             </v-row>
             <v-row no-gutters>

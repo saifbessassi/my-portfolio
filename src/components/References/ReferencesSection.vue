@@ -1,9 +1,11 @@
 <template>
-    <Section id="references" title="I'm proud to have collaborated with some awesome companies" class="bg-surface py-15">
+    <Section id="references" :title="$t('referencesSection.title')" class="bg-surface py-15">
         <v-container fluid>
             <v-row justify="center" align="center">
                 <v-col class="text-center" cols="12" sm="6" md="4" lg="3" v-for="companie in companies">
-                    <img :src="photoPath + companie.logo" class="logo" />
+                    <a :href="companie.link" target="_blank">
+                        <img :src="photoPath + companie.logo" class="logo" />
+                    </a>
                 </v-col>
             </v-row>
         </v-container>

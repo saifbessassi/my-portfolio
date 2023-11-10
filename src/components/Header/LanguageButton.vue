@@ -1,0 +1,34 @@
+<template>
+    <v-btn class="h-100">
+        <v-img :src="flagPath" width="40px" @click="changeLocale" />
+    </v-btn>
+</template>
+
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { useRouter } from "vue-router"
+import Tr from "@/i18n/translation";
+
+const { locale } = useI18n()
+const router = useRouter()
+
+const flagPath = computed(() => {
+    if (locale.value === 'en') {
+        return 'src/assets/images/flags/fr.png'
+    } else {
+        return 'src/assets/images/flags/en.png'
+    }
+})
+
+async function changeLocale() {
+    let newLocale = locale.value === 'en' ? 'fr' : 'en'
+    await Tr.switchLanguage(newLocale)
+
+    try {
+        await router.replace({ params: { locale: newLocale } })
+    } catch (e) {
+        router.push("/")
+    }
+}
+</script>
