@@ -5,8 +5,8 @@
         {{ title }}
         <hr width="40%" class="mx-auto my-5 bg-info rounded-pill" style="height: 5px;"/>
       </div>
-      <slot></slot>
     </v-container>
+      <slot></slot>
   </section>
 </template>
 

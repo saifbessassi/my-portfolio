@@ -4,6 +4,7 @@ import FormationSection from './components/Formation/FormationSection.vue';
 import AppHeader from './components/Header/AppHeader.vue';
 import Home from './components/Home.vue'
 import ProjectsSection from './components/Projects/ProjectsSection.vue';
+import ReferencesSection from './components/References/ReferencesSection.vue';
 import ExperienceSection from './components/Timeline/ExperienceSection.vue';
 </script>
 
@@ -14,6 +15,7 @@ import ExperienceSection from './components/Timeline/ExperienceSection.vue';
   <FormationSection />
   <ExperienceSection />
   <ProjectsSection />
+  <ReferencesSection />
 </template>
 
 <style scoped></style>

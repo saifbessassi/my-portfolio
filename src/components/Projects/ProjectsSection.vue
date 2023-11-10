@@ -1,7 +1,8 @@
 <template>
     <Section id="projects" title="projects" class="bg-white py-15">
-        
+        <v-container>
             <ProjectsList />
+        </v-container>
     </Section>
 </template>
 

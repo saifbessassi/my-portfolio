@@ -4,7 +4,9 @@
         <v-col
           v-for="projet in projects"
           :key="projet.title"
-          cols="4"
+          cols="12"
+          sm="6"
+          md="4"
         >
           <ProjectOverview
             :project="projet"
