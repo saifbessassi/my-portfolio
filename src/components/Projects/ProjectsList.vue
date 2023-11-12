@@ -20,7 +20,7 @@ const projects = [
       'projectsSection.portfolio.tasks.task2',
       'projectsSection.portfolio.tasks.task3'
     ],
-    photos: ['Portfolio-0.png', 'Portfolio-1.png', 'Portfolio-2.png'],
+    photos: ['portfolio-0.png', 'portfolio-1.png', 'portfolio-2.png'],
     framworks: 'Vue.js',
     technologies: ['Vue.js 3', 'Vuetify', 'Git', 'Github']
   },

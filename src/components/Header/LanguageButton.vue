@@ -15,9 +15,9 @@ const router = useRouter()
 
 const flagPath = computed(() => {
   if (locale.value === 'en') {
-    return 'src/assets/images/flags/fr.png'
+    return 'images/flags/fr.png'
   } else {
-    return 'src/assets/images/flags/en.png'
+    return 'images/flags/en.png'
   }
 })
 

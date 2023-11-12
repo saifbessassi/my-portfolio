@@ -47,7 +47,7 @@
 import { ref } from 'vue'
 import ProjectDetails from './ProjectDetails.vue'
 
-const photoPath = 'src/assets/images/projects/'
+const photoPath = 'images/projects/'
 const showDetails = ref(false)
 
 defineProps({

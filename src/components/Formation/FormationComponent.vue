@@ -15,7 +15,7 @@
             {{ $t(formation.degree) }}
           </div>
           <v-avatar
-            :image="'src/assets/images/' + formation.logo"
+            :image="'images/' + formation.logo"
             size="x-large"
             class="rounded-lg"
           ></v-avatar>

@@ -18,7 +18,7 @@
             {{ exp.company }}
           </div>
           <v-avatar size="x-large" class="rounded-lg">
-            <v-img :src="'src/assets/images/' + exp.logo" />
+            <v-img :src="'images/' + exp.logo" />
           </v-avatar>
         </div>
       </template>

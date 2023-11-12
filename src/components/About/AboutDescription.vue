@@ -3,7 +3,7 @@
     {{ $t('aboutSection.descriptionTitle') }}
   </h4>
   <v-avatar class="d-flex mx-auto mb-2" size="250" rounded="0">
-    <v-img max-height="250" src="src/assets/images/me.png" alt="me">
+    <v-img max-height="250" src="images/me.png" alt="me">
       <template #placeholder>
         <div class="d-flex align-center justify-center fill-height">
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>

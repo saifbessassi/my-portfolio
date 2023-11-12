@@ -15,7 +15,7 @@
 <script setup>
 import Section from '../Section.vue'
 
-const photoPath = 'src/assets/images/companies/'
+const photoPath = 'images/companies/'
 const companies = [
   {
     logo: 'sparkit-logo.png',
