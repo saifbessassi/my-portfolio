@@ -13,7 +13,7 @@
     "references": "références"
   },
   "aboutSection": {
-    "title": "About me",
+    "title": "à propos de moi",
     "subtitle": "Vous trouverez ici plus d'informations sur moi, ce que je fais et mes compétences actuelles principalement en termes de programmation et de technologie.",
     "descriptionTitle": "Apprenez à me connaître !",
     "description1": "Je suis un <b>développeur fullstack</b> passionné, spécialisé dans les technologies <b>Laravel</b> et <b>Vue.js</b>.",
@@ -49,7 +49,7 @@
     }
   },
   "experiencesSection": {
-    "title": "experiences",
+    "title": "expériences",
     "technologyAndEnv": "Technologie/Environnement",
     "experiences1": {
       "post": "Développeur web Full Stack PHP & Javascript",
