@@ -1,13 +1,24 @@
 <template>
   <v-timeline side="end">
-    <v-timeline-item v-for="(formation, i) in formations" :key="i" :dot-color="formation.color" :icon="formation.icon"
-      fill-dot class="text-left">
+    <v-timeline-item
+      v-for="(formation, i) in formations"
+      :key="i"
+      :dot-color="formation.color"
+      :icon="formation.icon"
+      fill-dot
+      class="text-left"
+    >
       <template v-slot:opposite>
         <div class="text-right">
           <div class="text-subtitle-2 font-weight-bold">{{ formation.date }}</div>
-          <div class="text-caption font-weight-medium text-capitalize text-info-lighten-1">{{ $t(formation.degree) }}
+          <div class="text-caption font-weight-medium text-capitalize text-info-lighten-1">
+            {{ $t(formation.degree) }}
           </div>
-          <v-avatar :image="'src/assets/images/' + formation.logo" size="x-large" class="rounded-lg"></v-avatar>
+          <v-avatar
+            :image="'src/assets/images/' + formation.logo"
+            size="x-large"
+            class="rounded-lg"
+          ></v-avatar>
         </div>
       </template>
       <div>
@@ -29,8 +40,8 @@ const formations = [
     date: '2014 - 2014',
     establishment: 'formationSection.formation1.establishment',
     logo: 'school.png',
-    degree: "formationSection.formation1.degree",
-    degreeDetails: "formationSection.formation1.degreeDetails",
+    degree: 'formationSection.formation1.degree',
+    degreeDetails: 'formationSection.formation1.degreeDetails',
     icon: 'mdi-school'
   },
   {
@@ -38,8 +49,8 @@ const formations = [
     date: '2014 - 2017',
     establishment: 'formationSection.formation2.establishment',
     logo: 'fss.png',
-    degree: "formationSection.formation2.degree",
-    degreeDetails: "formationSection.formation2.degreeDetails",
+    degree: 'formationSection.formation2.degree',
+    degreeDetails: 'formationSection.formation2.degreeDetails',
     icon: 'mdi-school'
   },
   {
@@ -48,7 +59,7 @@ const formations = [
     establishment: 'formationSection.formation3.establishment',
     logo: 'riga university.png',
     degree: 'formationSection.formation3.degree',
-    degreeDetails: "formationSection.formation3.degreeDetails",
+    degreeDetails: 'formationSection.formation3.degreeDetails',
     icon: 'mdi-school'
   },
   {
@@ -56,8 +67,8 @@ const formations = [
     date: '2017 - 2020',
     establishment: 'formationSection.formation4.establishment',
     logo: 'isims.jpg',
-    degree: "formationSection.formation4.degree",
-    degreeDetails: "formationSection.formation4.degreeDetails",
+    degree: 'formationSection.formation4.degree',
+    degreeDetails: 'formationSection.formation4.degreeDetails',
     icon: 'mdi-school'
   }
 ]

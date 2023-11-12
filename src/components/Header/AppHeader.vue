@@ -4,8 +4,8 @@
 </template>
 
 <script setup>
-import PhoneHeader from './PhoneHeader.vue';
-import DesktopHeader from './DesktopHeader.vue';
+import PhoneHeader from './PhoneHeader.vue'
+import DesktopHeader from './DesktopHeader.vue'
 
 const nav = [
   {
@@ -36,7 +36,7 @@ const nav = [
   {
     id: 'references',
     text: 'header.references',
-    icon:'mdi-account-search'
+    icon: 'mdi-account-search'
   }
 ]
 function scrollTo(id) {

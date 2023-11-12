@@ -1,5 +1,10 @@
 <template>
-  <v-toolbar app color="background" class="d-flex d-md-none" :class="dialog ? 'position-absolute' : 'position-sticky'">
+  <v-toolbar
+    app
+    color="background"
+    class="d-flex d-md-none"
+    :class="dialog ? 'position-absolute' : 'position-sticky'"
+  >
     <v-app-bar-nav-icon slot="activator" @click="dialog = true"></v-app-bar-nav-icon>
     <v-spacer></v-spacer>
     <LanguageButton />
@@ -25,8 +30,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import LanguageButton from './LanguageButton.vue';
+import { ref } from 'vue'
+import LanguageButton from './LanguageButton.vue'
 
 defineProps({
   items: {

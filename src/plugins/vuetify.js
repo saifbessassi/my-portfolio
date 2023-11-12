@@ -32,7 +32,7 @@ export default createVuetify({
     variations: {
       colors: ['primary', 'secondary', 'info'],
       lighten: 4,
-      darken: 4,
-    },
+      darken: 4
+    }
   }
 })

@@ -1,27 +1,27 @@
 <template>
-    <footer class="bg-background">
-        <v-container class="pa-0">
-            <v-row justify="space-between" align="center" class="pa-15">
-                <v-col cols="4">
-                    <p class="mb-3">{{ $t('footer.message') }} 😉</p>
-                    <p class="text-center">
-                        <v-btn class="mr-1" icon="mdi-facebook" variant="text" />
-                        <v-btn class="mr-1" icon="mdi-linkedin" variant="text" />
-                        <v-btn icon="mdi-github" variant="text" />
-                    </p>
-                </v-col>
+  <footer class="bg-background">
+    <v-container class="pa-0">
+      <v-row justify="space-between" align="center" class="pa-15">
+        <v-col cols="4">
+          <p class="mb-3">{{ $t('footer.message') }} 😉</p>
+          <p class="text-center">
+            <v-btn class="mr-1" icon="mdi-facebook" variant="text" />
+            <v-btn class="mr-1" icon="mdi-linkedin" variant="text" />
+            <v-btn icon="mdi-github" variant="text" />
+          </p>
+        </v-col>
 
-                <v-col cols="4">
-                    <h3 class="text-uppercase mb-5">saif bessassi</h3>
-                    <p class="mb-3"><v-icon class="mr-2">mdi-email</v-icon>sa.bessassi@gmail.com</p>
-                    <p class="mb-3"><v-icon class="mr-2">mdi-phone</v-icon>+33 6 38 01 14 77</p>
-                    <p class="text-capitalize"><v-icon class="mr-2">mdi-map-marker</v-icon>paris, france</p>
-                </v-col>
-            </v-row>
+        <v-col cols="4">
+          <h3 class="text-uppercase mb-5">saif bessassi</h3>
+          <p class="mb-3"><v-icon class="mr-2">mdi-email</v-icon>sa.bessassi@gmail.com</p>
+          <p class="mb-3"><v-icon class="mr-2">mdi-phone</v-icon>+33 6 38 01 14 77</p>
+          <p class="text-capitalize"><v-icon class="mr-2">mdi-map-marker</v-icon>paris, france</p>
+        </v-col>
+      </v-row>
 
-            <v-divider></v-divider>
+      <v-divider></v-divider>
 
-            <p class="pa-10 text-center">Made by me © Copyright {{ new Date().getFullYear() }}</p>
-        </v-container>
-    </footer>
+      <p class="pa-10 text-center">Made by me © Copyright {{ new Date().getFullYear() }}</p>
+    </v-container>
+  </footer>
 </template>

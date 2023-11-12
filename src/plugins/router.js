@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory, RouterView } from 'vue-router'
 import App from '@/App.vue'
-import Tr from "@/i18n/translation"
+import Tr from '@/i18n/translation'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes: [
     {
-      path: "",
-      redirect: "/fr"
+      path: '',
+      redirect: '/fr'
     },
     {
-      path: "/:locale?",
+      path: '/:locale?',
       component: RouterView,
       children: [
         {

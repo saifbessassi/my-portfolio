@@ -9,8 +9,4 @@ import i18n from './plugins/i18n'
 // Vue Router
 import router from './plugins/router'
 
-createApp(App)
-    .use(i18n)
-    .use(vuetify)
-    .use(router)
-    .mount('#app')
+createApp(App).use(i18n).use(vuetify).use(router).mount('#app')

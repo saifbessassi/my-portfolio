@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar app color="background" class="d-none d-md-flex position-sticky px-10">
+  <v-toolbar app color="background" class="d-none d-md-flex position-sticky px-10">
     <v-toolbar-items class="v-container py-0">
       <v-btn
         v-for="item in items"
@@ -17,14 +17,14 @@
 <script setup>
 import LanguageButton from './LanguageButton.vue'
 defineProps({
-    items: {
-        type: Array,
-        required: true
-    }
+  items: {
+    type: Array,
+    required: true
+  }
 })
 
 const emit = defineEmits(['click'])
 function scrollTo(id) {
-    emit('click', id)
+  emit('click', id)
 }
 </script>
