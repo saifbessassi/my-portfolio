@@ -23,10 +23,10 @@ const flagPath = computed(() => {
 
 async function changeLocale() {
   let newLocale = locale.value === 'en' ? 'fr' : 'en'
-  await Tr.switchLanguage(newLocale)
-
   try {
-    await router.replace({ params: { locale: newLocale } })
+    Tr.switchLanguage(newLocale).then(() => {
+      router.push('/'.newLocale)
+    })
   } catch (e) {
     router.push('/')
   }
