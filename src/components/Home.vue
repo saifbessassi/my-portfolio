@@ -11,7 +11,7 @@
         <v-img
           id="badge"
           role="button"
-          src="/images/vue-certification.png"
+          src="images/vue-certification.png"
           width="100px"
           class="mt-4 pt-4 mx-auto"
           @click="openCertif"
