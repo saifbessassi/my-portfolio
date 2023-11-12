@@ -1,7 +1,8 @@
 {
     "home": {
         "hello": "Hello, i'm",
-        "myPost": "I'm a full-stack web developer."
+        "myPost": "I'm a full-stack web developer. Certified Vue.js",
+        "viewCertif": "View my certification"
     },
     "header": {
         "home": "home",

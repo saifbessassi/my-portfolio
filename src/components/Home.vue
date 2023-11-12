@@ -1,20 +1,29 @@
 <template>
   <Section id="home" class="text-white h-screen">
     <v-container fluid class="text-center">
+      <div class="night">
+        <div v-for="n in 15" class="shooting_star"></div>
+      </div>
       <div class="text">
-      {{ $t('home.hello')}} <span class="text-primary">Saif BESSASSI</span>.
-      <br />
-      {{ $t('home.myPost') }}
-    </div>
-    <div class="night">
-      <div v-for="n in 15" class="shooting_star"></div>
-    </div>
+        {{ $t('home.hello') }} <span class="text-primary">Saif BESSASSI</span>.
+        <br />
+        {{ $t('home.myPost') }}
+        <v-img id="badge" role="button" src="src/assets/images/vue-certification.png" width="100px"
+          class="mt-4 pt-4 mx-auto" @click="openCertif">
+          <v-tooltip content-class="bg-white" activator="parent" location="bottom">{{ $t('home.viewCertif') }}</v-tooltip>
+        </v-img>
+
+      </div>
     </v-container>
   </Section>
 </template>
 
 <script setup lang="ts">
 import Section from './Section.vue'
+
+function openCertif() {
+  window.open('https://certificates.dev/c/9a7267eb-567a-4157-b511-846aacc3ecd1', "_blank")
+}
 </script>
 
 <style lang="scss">
@@ -29,7 +38,7 @@ import Section from './Section.vue'
 }
 
 .text {
-  z-index: 1;
+  z-index: 9999;
   font-size: 32pt;
   line-height: 36pt;
 }
@@ -61,12 +70,10 @@ $shooting-time: 3000ms;
     top: calc(50% - 1px);
     right: 0;
     height: 2px;
-    background: linear-gradient(
-      -45deg,
-      rgba(0, 0, 255, 0),
-      rgba(var(--v-theme-secondary)),
-      rgba(0, 0, 255, 0)
-    );
+    background: linear-gradient(-45deg,
+        rgba(0, 0, 255, 0),
+        rgba(var(--v-theme-secondary)),
+        rgba(0, 0, 255, 0));
     transform: translateX(50%) rotateZ(45deg);
     border-radius: 100%;
     animation: shining $shooting-time ease-in-out infinite;
@@ -78,12 +85,10 @@ $shooting-time: 3000ms;
     top: calc(50% - 1px);
     right: 0;
     height: 2px;
-    background: linear-gradient(
-      -45deg,
-      rgba(0, 0, 255, 0),
-      rgba(var(--v-theme-secondary)),
-      rgba(0, 0, 255, 0)
-    );
+    background: linear-gradient(-45deg,
+        rgba(0, 0, 255, 0),
+        rgba(var(--v-theme-secondary)),
+        rgba(0, 0, 255, 0));
     transform: translateX(50%) rotateZ(45deg);
     border-radius: 100%;
     animation: shining $shooting-time ease-in-out infinite;
@@ -92,7 +97,7 @@ $shooting-time: 3000ms;
 
   @for $i from 1 through 20 {
     &:nth-child(#{$i}) {
-      $delay: random(9999) + 0ms;
+      $delay: random(9999)+0ms;
       top: calc(50% - #{random(400) - 200px});
       left: calc(50% - #{random(300) + 0px});
       animation-delay: $delay;
@@ -152,4 +157,37 @@ $shooting-time: 3000ms;
     transform: rotate(45 + 360deg);
   }
 }
-</style>
+
+#badge {
+  animation: jump-shaking 1s infinite;
+}
+
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateY(-9px)
+  }
+
+  35% {
+    transform: translateY(-9px) rotate(17deg)
+  }
+
+  55% {
+    transform: translateY(-9px) rotate(-17deg)
+  }
+
+  65% {
+    transform: translateY(-9px) rotate(17deg)
+  }
+
+  75% {
+    transform: translateY(-9px) rotate(-17deg)
+  }
+
+  100% {
+    transform: translateY(0) rotate(0)
+  }
+}</style>
