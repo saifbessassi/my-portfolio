@@ -6,10 +6,6 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes: [
     {
-      path: '',
-      redirect: '/fr'
-    },
-    {
       path: '/:locale?',
       component: RouterView,
       children: [

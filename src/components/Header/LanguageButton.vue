@@ -25,7 +25,7 @@ async function changeLocale() {
   let newLocale = locale.value === 'en' ? 'fr' : 'en'
   try {
     Tr.switchLanguage(newLocale).then(() => {
-      router.push('/'.newLocale)
+      router.replace(`/${newLocale}`)
     })
   } catch (e) {
     router.push('/')
