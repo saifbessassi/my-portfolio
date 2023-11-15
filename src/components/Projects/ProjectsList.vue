@@ -92,6 +92,37 @@ const projects = [
     ]
   },
   {
+    title: 'projectsSection.starkB2b.title',
+    description: 'projectsSection.starkB2b.description',
+    tasks: [
+      'projectsSection.starkB2b.tasks.task1',
+      'projectsSection.starkB2b.tasks.task2',
+      'projectsSection.starkB2b.tasks.task3',
+      'projectsSection.starkB2b.tasks.task4',
+      'projectsSection.starkB2b.tasks.task5'
+    ],
+    photos: [
+      'stark-b2b-0.png'
+    ],
+    framworks: 'Laravel / Vue.js / Nuxt.js',
+    technologies: [
+      'Laravel 6',
+      'Vue.js 2',
+      'Nuxt.js 2',
+      'PHP 7',
+      'REST API',
+      'Vuetify',
+      'Git',
+      'Gitlab',
+      'MySQL',
+      'Javascript',
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'PhpUnit'
+    ]
+  },
+  {
     title: 'projectsSection.starkSolution.title',
     description: 'projectsSection.starkSolution.description',
     tasks: [
@@ -103,6 +134,42 @@ const projects = [
       'projectsSection.starkSolution.tasks.task6',
       'projectsSection.starkSolution.tasks.task7',
       'projectsSection.starkSolution.tasks.task8'
+    ],
+    photos: [
+      'stark-solutions-0.png',
+      'stark-solutions-1.png',
+      'stark-solutions-2.png',
+      'stark-solutions-2.png'
+    ],
+    framworks: 'Symfony / API Platform / Vue.js',
+    technologies: [
+      'Vue.js 2',
+      'Bootstrap-vue',
+      'Javascript',
+      'Symfony 4',
+      'PHP 7',
+      'REST API',
+      'API Platform',
+      'Git',
+      'Gitlab',
+      'MySQL',
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'Azure DevOps'
+    ]
+  },
+  {
+    title: 'projectsSection.jobboard.title',
+    description: 'projectsSection.jobboard.description',
+    tasks: [
+      'projectsSection.jobboard.tasks.task1',
+      'projectsSection.jobboard.tasks.task2',
+      'projectsSection.jobboard.tasks.task3',
+      'projectsSection.jobboard.tasks.task4',
+      'projectsSection.jobboard.tasks.task5',
+      'projectsSection.jobboard.tasks.task6',
+      'projectsSection.jobboard.tasks.task7'
     ],
     photos: [
       'job-board-0.png',
@@ -132,40 +199,37 @@ const projects = [
     ]
   },
   {
-    title: 'projectsSection.jobboard.title',
-    description: 'projectsSection.jobboard.description',
+    title: 'projectsSection.crmAjst.title',
+    description: 'projectsSection.crmAjst.description',
     tasks: [
-      'projectsSection.jobboard.tasks.task1',
-      'projectsSection.jobboard.tasks.task2',
-      'projectsSection.jobboard.tasks.task3',
-      'projectsSection.jobboard.tasks.task4',
-      'projectsSection.jobboard.tasks.task5',
-      'projectsSection.jobboard.tasks.task6',
-      'projectsSection.jobboard.tasks.task7'
+      'projectsSection.crmAjst.tasks.task1',
+      'projectsSection.crmAjst.tasks.task2',
+      'projectsSection.crmAjst.tasks.task3',
+      'projectsSection.crmAjst.tasks.task4',
+      'projectsSection.crmAjst.tasks.task5',
+      'projectsSection.crmAjst.tasks.task6',
+      'projectsSection.crmAjst.tasks.task7',
+      'projectsSection.crmAjst.tasks.task8'
     ],
     photos: [
-      'stark-solutions-0.png',
-      'stark-solutions-1.png',
-      'stark-solutions-2.png',
-      'stark-solutions-2.png'
+      'crm-ajst-0.png',
+      'crm-ajst-1.png',
+      'crm-ajst-2.png',
+      'crm-ajst-3.png'
     ],
-    framworks: 'Symfony / API Platform / Vue.js',
+    framworks: 'Symfony',
     technologies: [
-      'Vue.js 2',
-      'Bootstrap-vue',
-      'Javascript',
-      'Symfony 4',
-      'PHP 7',
-      'REST API',
-      'API Platform',
+      'Symfony 3',
+      'Php 5',
+      'Doctrine',
+      'Twig',
+      'Bootstrap',
+      'HTML/CSS',
+      'jQuery',
+      'MySql',
       'Git',
-      'Gitlab',
-      'MySQL',
-      'HTML5',
-      'CSS3',
-      'SASS',
-      'Azure DevOps'
+      'Github'
     ]
-  }
+  },
 ]
 </script>

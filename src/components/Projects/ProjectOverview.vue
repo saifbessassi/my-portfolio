@@ -19,7 +19,7 @@
           v-if="isHovering"
           class="d-flex flex-column transition-fast-in-fast-out bg-white v-card--reveal"
         >
-          <div class="text-h4 font-weight-bold mb-1">
+          <div class="text-h4 text-center font-weight-bold mb-1">
             {{ $t(project.title) }}
           </div>
           <div class="text-body-1 text-primary">

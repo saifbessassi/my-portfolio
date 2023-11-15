@@ -120,6 +120,17 @@
         "task8": "Implémentation des tests unitaires."
       }
     },
+    "starkB2b": {
+      "title": "Stark B2B",
+      "description": "Pendant cette expérience, j'ai participé à la phase de l'amélioration de la solution existante en tant quedéveloppeur full stack. Mon rôle consistait à identifier les lacunes dans la version précédente du système, proposer des solutions et mettre en œuvre des améliorations significatives tant du côté front-end que back-end.",
+      "tasks": {
+        "task1": "Collaborer avec l'équipe pour comprendre les besoins des utilisateurs et identifier les domaines d'amélioration critique de la solution existante.",
+        "task2": "Revu et optimisation l'interface utilisateur existante en utilisant des technologies modernes telles que Vue.js et Vuetify, améliorant ainsi l'expérience utilisateur.",
+        "task3": "Intégrer de nouvelles fonctionnalités basées sur les retours des utilisateurs et les exigences métier.",
+        "task4": "Effectuer des refactorings du code back-end pour améliorer la maintenabilité, la performance et la scalabilité de l'application.",
+        "task5": "Collaborer avec des services externes pour intégrer de nouvelles fonctionnalités et améliorer les flux de travail."
+      }
+    },
     "starkSolution": {
       "title": "Stark Solutions",
       "description": "En tant que développeur Vue.js, j'ai été chargé de concevoir et de développer une plateforme permettant la création des comptes, la gestion des organisations, des clients, des packs et de parrainage.",
@@ -145,6 +156,17 @@
         "task5": "Création et consommations des APIs Rest.",
         "task6": "Mise en place de notifications par email.",
         "task7": "Implémentation des tests unitaires."
+      }
+    },
+    "crmAjst": {
+      "title": "Platform d'administration",
+      "description": "En tant que développeur Symfony et un membre au sein de l'Association Jeunes Science de Tunisie, j'ai été chargé de concevoir, développer et maintenir une plateforme d'administration sur mesure destinée à optimiser les processus internes de l'organisation",
+      "tasks": {
+        "task1": "Analyse des besoins et rédaction de spécifications techniques.",
+        "task2": "Conception et mise en œuvre d'une application web robuste basée sur le framework Symfony, assurant une gestion efficace des activités administratives de l'Association.",
+        "task3": "Conception et développement de l'interface utilisateur en utilisant Twig, Bootstrap, HTML, CSS et JavaScript pour garantir une expérience utilisateur fluide et intuitive.",
+        "task4": "Mise en place de l'architecture pour gérer les utilisateurs, les accès, les ressources et les évènements.",
+        "task5": "Intégration de modules telles que la gestion des membres, le suivi des événements, la génération de rapports et la gestion des ressources, contribuant ainsi à une gestion transparente et collaborative au sein de l'organisation."
       }
     }
   },

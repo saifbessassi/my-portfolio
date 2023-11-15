@@ -120,6 +120,17 @@
         "task8": "Implementation of unit tests."
       }
     },
+    "starkB2b": {
+      "title": "Stark B2B",
+      "description": "During this experience, I participated in the improvement phase of the existing solution as a full stack developer. My role was to identify gaps in the previous version of the system, propose solutions and implement significant improvements on both the front-end and back-end sides.",
+      "tasks": {
+        "task1": "Collaborate with the team to understand user needs and identify areas of critical improvement to the existing solution.",
+        "task2": "Reviewed and optimized the existing user interface using modern technologies such as Vue.js and Vuetify, thereby improving the user experience.",
+        "task3": "Integrate new features based on user feedback and business requirements.",
+        "task4": "Perform back-end code refactorings to improve the maintainability, performance and scalability of the application.",
+        "task5": "Collaborated with external services to integrate new features and improve workflows."
+      }
+    },
     "starkSolution": {
       "title": "Stark Solutions",
       "description": "As a Vue.js developer, I was responsible for designing and developing a platform allowing the creation of accounts, the management of organizations, customers, packs and sponsorship.",
@@ -145,6 +156,17 @@
         "task5": "Creation and use of Rest APIs.",
         "task6": "Implementation of email notifications.",
         "task7": "Implementation of unit tests."
+      }
+    },
+    "crmAjst": {
+      "title": "Administration platform",
+      "description": "As a Symfony developer and a member of the Tunisian Youth Science Association, I was responsible for designing, developing and maintaining a tailor-made administration platform intended to optimize the organization's internal processes.",
+      "tasks": {
+        "task1": "Analysis of needs and drafting of technical specifications.",
+        "task2": "Design and implementation of a robust web application based on the Symfony framework, ensuring effective management of the Association's administrative activities.",
+        "task3": "User interface design and development using Twig, Bootstrap, HTML, CSS and JavaScript to ensure a smooth and intuitive user experience.",
+        "task4": "Implementation of the architecture to manage users, access, resources and events.",
+        "task5": "Integration of modules such as membership management, event tracking, reporting and resource management, thereby contributing to transparent and collaborative management within the organization."
       }
     }
   },
