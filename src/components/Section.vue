@@ -4,7 +4,12 @@
       v-if="props.title"
       class="justify-center d-flex flex-column align-center text-center"
     >
-      <div class="text-center text-uppercase text-info text-h3 font-weight-bold">
+      <div
+        class="text-center text-uppercase text-info text-h3 font-weight-bold"
+        data-aos="zoom-in-up"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+      >
         {{ title }}
         <hr width="40%" class="mx-auto my-5 bg-info rounded-pill" style="height: 5px" />
       </div>

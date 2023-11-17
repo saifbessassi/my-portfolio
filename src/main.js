@@ -9,4 +9,5 @@ import i18n from './plugins/i18n'
 // Vue Router
 import router from './plugins/router'
 
+import 'aos/dist/aos.css'
 createApp(App).use(i18n).use(vuetify).use(router).mount('#app')

@@ -3,7 +3,9 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="8">
-          <p class="mb-10 text-center text-info-lighten-3">{{ $t('aboutSection.subtitle') }}</p>
+          <p class="mb-10 text-center text-info-lighten-3" data-aos="fade-up">
+            {{ $t('aboutSection.subtitle') }}
+          </p>
         </v-col>
       </v-row>
       <v-row no-gutters>

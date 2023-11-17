@@ -7,6 +7,12 @@ import ProjectsSection from './components/Projects/ProjectsSection.vue'
 import ReferencesSection from './components/References/ReferencesSection.vue'
 import ExperienceSection from './components/Experience/ExperienceSection.vue'
 import FooterSection from './components/Footer/FooterSection.vue'
+import { onMounted } from 'vue'
+
+import AOS from 'aos'
+onMounted(() => {
+  AOS.init()
+})
 </script>
 
 <template>

@@ -1,12 +1,30 @@
 <template>
-  <footer class="bg-background">
+  <footer
+    class="bg-background"
+    data-aos="slide-up"
+    data-aos-ease="easy"
+    data-aos-duration="2000"
+    data-aos-delay="500"
+    data-aos-anchor-placement="bottom-center"
+  >
     <v-container class="pa-0">
       <v-row justify="space-between" align="center" class="pa-15">
         <v-col sm="6" md="4" cols="12">
           <p class="mb-3">{{ $t('footer.message') }} 😉</p>
           <p class="text-center">
-            <v-btn href="https://www.linkedin.com/in/saifbessassi" target="_blanc" class="mr-1" icon="mdi-linkedin" variant="text" />
-            <v-btn href="https://github.com/saifbessassi" target="_blanc" icon="mdi-github" variant="text" />
+            <v-btn
+              href="https://www.linkedin.com/in/saifbessassi"
+              target="_blanc"
+              class="mr-1"
+              icon="mdi-linkedin"
+              variant="text"
+            />
+            <v-btn
+              href="https://github.com/saifbessassi"
+              target="_blanc"
+              icon="mdi-github"
+              variant="text"
+            />
           </p>
         </v-col>
 

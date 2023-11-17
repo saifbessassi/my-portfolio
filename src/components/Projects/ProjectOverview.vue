@@ -1,6 +1,14 @@
 <template>
   <v-hover v-slot="{ isHovering, props }">
-    <v-card class="mx-auto" color="grey-lighten-4" max-width="600" v-bind="props">
+    <v-card
+      class="mx-auto"
+      color="grey-lighten-4"
+      max-width="600"
+      v-bind="props"
+      data-aos="flip-up"
+      data-aos-ease="ease"
+      data-aos-duration="1500"
+    >
       <v-carousel
         cycle
         interval="3000"

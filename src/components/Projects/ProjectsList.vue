@@ -101,9 +101,7 @@ const projects = [
       'projectsSection.starkB2b.tasks.task4',
       'projectsSection.starkB2b.tasks.task5'
     ],
-    photos: [
-      'stark-b2b-0.png'
-    ],
+    photos: ['stark-b2b-0.png'],
     framworks: 'Laravel / Vue.js / Nuxt.js',
     technologies: [
       'Laravel 6',
@@ -211,12 +209,7 @@ const projects = [
       'projectsSection.crmAjst.tasks.task7',
       'projectsSection.crmAjst.tasks.task8'
     ],
-    photos: [
-      'crm-ajst-0.png',
-      'crm-ajst-1.png',
-      'crm-ajst-2.png',
-      'crm-ajst-3.png'
-    ],
+    photos: ['crm-ajst-0.png', 'crm-ajst-1.png', 'crm-ajst-2.png', 'crm-ajst-3.png'],
     framworks: 'Symfony',
     technologies: [
       'Symfony 3',
@@ -230,6 +223,6 @@ const projects = [
       'Git',
       'Github'
     ]
-  },
+  }
 ]
 </script>

@@ -1,23 +1,30 @@
 <template>
-  <h4 class="text-left text-h4 font-weight-bold text-info text-capitalize mb-5">
-    {{ $t('aboutSection.skillsTitle') }}
-  </h4>
-  <div class="text-left">
-    <template v-for="item of skills">
-      <h6 class="text-h6 font-weight-medium text-info-lighten-2 text-capitalize">
-        {{ $t(item.label) }}
-      </h6>
-      <div class="mb-1">
-        <v-chip
-          v-for="skill of item.values"
-          color="secondary"
-          label
-          class="ma-1 pa-3 font-weight-bold"
-        >
-          {{ skill }}
-        </v-chip>
-      </div>
-    </template>
+  <div
+    data-aos="flip-right"
+    data-aos-ease="ease"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+  >
+    <h4 class="text-left text-h4 font-weight-bold text-info text-capitalize mb-5">
+      {{ $t('aboutSection.skillsTitle') }}
+    </h4>
+    <div class="text-left">
+      <template v-for="item of skills">
+        <h6 class="text-h6 font-weight-medium text-info-lighten-2 text-capitalize">
+          {{ $t(item.label) }}
+        </h6>
+        <div class="mb-1">
+          <v-chip
+            v-for="skill of item.values"
+            color="secondary"
+            label
+            class="ma-1 pa-3 font-weight-bold"
+          >
+            {{ skill }}
+          </v-chip>
+        </div>
+      </template>
+    </div>
   </div>
 </template>
 

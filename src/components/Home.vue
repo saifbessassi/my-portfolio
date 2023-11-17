@@ -4,7 +4,7 @@
       <div class="night">
         <div v-for="n in 15" class="shooting_star"></div>
       </div>
-      <div class="text">
+      <div class="text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
         {{ $t('home.hello') }} <span class="text-primary">Saif BESSASSI</span>.
         <br />
         {{ $t('home.myPost') }}

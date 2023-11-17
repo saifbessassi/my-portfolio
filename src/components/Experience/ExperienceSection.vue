@@ -1,5 +1,14 @@
 <template>
-  <Section id="experiences" :title="$t('experiencesSection.title')" class="bg-surface py-15">
+  <Section
+    id="experiences"
+    :title="$t('experiencesSection.title')"
+    class="bg-surface py-15"
+    data-aos="slide-right"
+    data-aos-ease="ease"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+    data-aos-anchor-placement="top-center"
+  >
     <v-container>
       <ExperienceComponent />
     </v-container>

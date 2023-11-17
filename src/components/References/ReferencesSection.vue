@@ -2,7 +2,18 @@
   <Section id="references" :title="$t('referencesSection.title')" class="bg-surface py-15">
     <v-container fluid>
       <v-row justify="center" align="center">
-        <v-col class="text-center" cols="12" sm="6" md="4" lg="3" v-for="companie in companies">
+        <v-col
+          class="text-center"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="3"
+          v-for="companie in companies"
+          data-aos="slide-left"
+          data-aos-ease="ease-in-cubic"
+          data-aos-duration="3000"
+          data-aos-delay="500"
+        >
           <a :href="companie.link" target="_blank">
             <img :src="photoPath + companie.logo" class="logo" />
           </a>
