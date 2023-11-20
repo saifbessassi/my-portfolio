@@ -17,12 +17,29 @@
         </v-toolbar>
 
         <v-list>
-          <v-list-item v-for="item in items" :key="item.text" @click="scrollTo(item.id)">
-            <template #prepend>
-              <v-icon :icon="item.icon" />
-            </template>
-            <v-list-item-title class="text-uppercase">{{ $t(item.text) }}</v-list-item-title>
-          </v-list-item>
+          <RouterLink
+            v-for="item in items"
+            :key="item.id"
+            :to="`#${item.id}`"
+            custom
+            v-slot="{ href, navigate }"
+          >
+            <v-list-item
+              :href="href"
+              :class="{ 'bg-primary': isActive(item.id) }"
+              @click="
+                () => {
+                  dialog = false
+                  navigate
+                }
+              "
+            >
+              <template #prepend>
+                <v-icon :icon="item.icon" />
+              </template>
+              <v-list-item-title class="text-uppercase">{{ $t(item.text) }}</v-list-item-title>
+            </v-list-item>
+          </RouterLink>
         </v-list>
       </v-card>
     </v-dialog>
@@ -30,21 +47,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import LanguageButton from './LanguageButton.vue'
+import { useActive } from 'vue-use-active-scroll'
 
-defineProps({
+const props = defineProps({
   items: {
     type: Array,
     required: true
   }
 })
+const targets = computed(() => props.items.map(({ id }) => id))
+const { isActive } = useActive(targets)
 
 const dialog = ref(false)
-
-const emit = defineEmits(['click'])
-function scrollTo(id) {
-  emit('click', id)
-  dialog.value = false
-}
 </script>

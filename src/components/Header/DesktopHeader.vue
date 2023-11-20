@@ -1,13 +1,22 @@
 <template>
   <v-toolbar app color="background" class="d-none d-md-flex position-sticky px-10">
     <v-toolbar-items class="v-container py-0">
-      <v-btn
+      <RouterLink
         v-for="item in items"
         :key="item.id"
-        :prepend-icon="item.icon"
-        @click="scrollTo(item.id)"
-        >{{ $t(item.text) }}</v-btn
+        :to="`#${item.id}`"
+        custom
+        v-slot="{ href, navigate }"
       >
+        <v-btn
+          :prepend-icon="item.icon"
+          :href="href"
+          :class="{ 'bg-primary': isActive(item.id) }"
+          @click="navigate"
+        >
+          {{ $t(item.text) }}
+        </v-btn>
+      </RouterLink>
     </v-toolbar-items>
     <v-spacer></v-spacer>
     <LanguageButton />
@@ -15,16 +24,17 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import LanguageButton from './LanguageButton.vue'
-defineProps({
+import { useActive } from 'vue-use-active-scroll'
+
+const props = defineProps({
   items: {
     type: Array,
     required: true
   }
 })
 
-const emit = defineEmits(['click'])
-function scrollTo(id) {
-  emit('click', id)
-}
+const targets = computed(() => props.items.map(({ id }) => id))
+const { isActive } = useActive(targets)
 </script>

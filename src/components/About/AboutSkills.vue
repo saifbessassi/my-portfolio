@@ -1,10 +1,5 @@
 <template>
-  <div
-    data-aos="flip-right"
-    data-aos-ease="ease"
-    data-aos-duration="1500"
-    data-aos-delay="500"
-  >
+  <div data-aos="flip-right" data-aos-ease="ease" data-aos-duration="1500" data-aos-delay="500">
     <h4 class="text-left text-h4 font-weight-bold text-info text-capitalize mb-5">
       {{ $t('aboutSection.skillsTitle') }}
     </h4>
